@@ -1,0 +1,11 @@
+
+@import "./sections/image.scss";
+@import "./sections/blog-posts.scss";
+@import "./sections/blog-content.scss";
+@import "./sections/sidebar.scss";
+@import "./sections/archive.scss";
+@import "./sections/footer.scss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

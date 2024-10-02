@@ -1,0 +1,87 @@
+.single .page-content {
+    padding-bottom: 70px;
+    @screen lg {
+        padding-bottom: 100px;  
+    }
+}
+
+.single main {
+    width: calc(100% - 40px);
+    margin: 0 20px;
+    @screen lg {
+        width: calc(66.666% - 6px - 60px);
+        margin: 0 20px 0 40px;
+    }
+}
+
+.post-banner {
+    @apply relative z-10 bg-eggshell border-black border border-dashed rounded-[30px] p-5 mx-5 mt-[50px];
+    width: calc(100% - 40px);
+    &__inner {
+        @apply relative overflow-hidden rounded-[30px];
+        height: 350px;
+        img {
+            @apply absolute top-0 left-0 w-full h-full;
+            @apply object-cover object-center;
+        }
+    }
+    @screen lg {
+        @apply p-[30px];
+        margin: 50px 40px 0 40px;
+        width: calc(100% - 80px);
+        &__inner {
+            height: 450px;
+        }
+    }
+}
+
+.post-main {
+    @apply text-lg w-full;
+    @apply bg-eggshell border border-dashed border-black relative z-10;
+    @apply rounded-[30px] block w-full p-5 lg:p-[30px] bg-eggshell;
+}
+
+.post-content {
+
+    p:not(:last-child) {
+        @apply mb-5;
+    }
+    ul, ol {
+        @apply m-0 mb-5;
+    }
+    img {
+        @apply block w-full my-[40px];
+    }
+    blockquote {
+        @apply w-full border-l border-dashed border-black;
+        @apply pl-6 py-5 mb-5;
+        max-width: 700px;
+    }
+    strong {
+        @apply font-bold;
+    }
+    h1, h2, h3, h4 {
+        @apply text-3xl font-bold mb-8;
+    }
+
+    .video {
+        position: relative;
+        height: 0;
+        padding-bottom: 56.25%;
+        overflow: hidden;
+        width: 100%;
+        border-radius: 30px;
+    }
+    iframe {
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+    }
+}
+
+.sidebar .filter {
+    border-style: dashed !important;
+    font-size: 16px;
+}

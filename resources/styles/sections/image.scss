@@ -1,0 +1,15 @@
+.image {
+    &__outer {
+        width: calc(100% - 40px);
+        @screen lg {
+            width: calc(66.666% - 60px);
+        }
+    }
+    &__outer,
+    &__inner  {
+        border-radius: 30px;
+    }
+    &__inner {
+        @apply overflow-hidden relative;
+    }
+}

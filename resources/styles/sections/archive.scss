@@ -1,0 +1,13 @@
+.blog main {
+    @apply w-full;
+}
+
+.posts-navigation {
+    @apply px-5 pt-[50px] pb-[50px] lg:pb-[100px];
+    .nav-links {
+        @apply flex justify-center gap-3;
+    }
+    a {
+        @apply underline text-lg;
+    }
+}

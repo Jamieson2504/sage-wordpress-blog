@@ -1,0 +1,19 @@
+.blog-posts {
+    &__wrap {
+        width: 100%;
+        @screen md {
+            width: 66.666%;
+        }
+        @screen lg {
+            width: 100%;
+        }
+    }
+    &--preview &__item {
+        @screen md {
+            &:nth-child(3) {display: none;}
+        }
+        @screen lg {
+            &:nth-child(3) {display: block;}
+        }
+    }
+}

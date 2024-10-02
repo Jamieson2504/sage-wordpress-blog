@@ -1,0 +1,8 @@
+/node_modules
+/vendor
+/public
+/gsap-bonus
+.env
+.budfiles
+npm-debug.log
+yarn-error.log

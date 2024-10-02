@@ -1,0 +1,12 @@
+header {
+    transition: all 0.4s ease-in-out;
+    @apply fixed px-7 top-0 left-0 py-3 z-50 flex justify-between;
+    @apply items-center w-full border-b border-transparent border-dashed;
+    .brand {
+        @apply font-alt uppercase text-3xl text-darkblue;
+    }
+}
+
+.scrolled header {
+    @apply bg-eggshell border-black;
+}

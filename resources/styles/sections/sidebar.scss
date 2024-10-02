@@ -1,0 +1,10 @@
+.sidebar {
+    width: calc(100% - 40px) !important;
+    margin: 40px 20px;
+    @apply relative w-full mr-5 bg-eggshell border border-dashed;
+    @apply border-black rounded-[30px] z-10 self-start shrink-0;
+    @screen lg {
+        width: calc(33.333% - 54px) !important;
+        margin: 0 40px 0 20px;
+    }
+}

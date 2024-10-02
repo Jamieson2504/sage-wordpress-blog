@@ -1,0 +1,28 @@
+.hero {
+    @apply relative pt-[100px] md:pb-[70px];
+    @apply flex items-center justify-center text-center px-5;
+    @screen md {
+        min-height: 100vh;
+        min-height: 100svh;
+    }
+    h1 {
+        @apply text-darkblue leading-none not-italic font-normal font-alt relative z-10;
+        font-size: 80px;
+        font-optical-sizing: auto;
+        opacity: 0;
+        span div div {
+            font-variation-settings: "ELSH" 0;
+            transition: font-variation-settings 0.2s ease-in-out, color 0.4s ease-in-out;
+            &:hover {
+                @apply text-lighblue;
+                font-variation-settings: "ELSH" 124;
+            }
+        }
+        @screen md {
+            font-size: 150px;
+        }
+        @screen lg {
+            font-size: 250px;
+        }
+    }
+}

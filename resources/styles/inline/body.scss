@@ -1,0 +1,32 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    @apply font-body;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    @apply bg-eggshell;
+    &:not(.mobile) {
+        cursor: none !important;
+        * {
+            cursor: none !important;
+        }
+    }
+    #wpadminbar {
+        cursor: auto !important;
+        * {cursor: auto !important;}
+        a,
+        .ab-item,
+        .ab-icon,
+        .ab-label,
+        .ab-sub-wrapper,
+        .adminbar-button,
+        .adminbar-input {cursor: pointer !important;}
+    }
+}
